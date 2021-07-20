@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      overflow: hidden;
+      background: url("https://cdn.nextgov.com/media/img/cd/2020/10/19/NGspace20201019/860x394.jpg?1618395239");
+      background-size: cover;
+    }
+    #board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid white;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    #man {
+      position: absolute;
+      width: 20px;
+      height: 30px;
+      background: url("https://thumbs.dreamstime.com/b/man-flat-icon-man-stand-one-leg-flat-icon-man-flat-icon-man-stand-one-leg-flat-icon-vector-best-illustration-design-icon-174771014.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+      margin-left: 0px;
+    }
+
+    
+
+    .mis {
+      position: absolute;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqOFtCtxcLFaEOZp9Q20ZdEI-m64u8a1K3X4Ot1T-pmJkOhxR3yYk9EU7M713uA84MLg&usqp=CAU");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform:rotate(90deg);
+      left: 43.5%;
+
+    }
+    #bb{
+        position: relative;
+        top: 420px;
+
+    }
+    #bd{
+        position: relative;
+        top: 420px;
+
+    }
+    #points {
+      position: absolute;
+      top: 0px;
+      margin: 40px;
+      opacity: 0.7;
+      font-size: 10em;
+      color: rgb(15, 4, 4);
+    }
+    
+  </style>
+  <script src="missilemovement.js" defer></script>
+  <script src="collison.js" defer></script>
+  <!-- <script src="point.js" defer></script> -->
+  <script src="generate.js" defer></script>
+  <script src="move.js" defer></script>
+  <script src="game.js" defer></script>
+  
+  <body>
+    <div id="board">
+      <div class="mis" id="h"></div>
+      <div id="man"></div>
+      <!-- <div id="b" >
+          <button id="bb" onclick="left()">left</button>
+          <button id="bd" onclick="right()">right</button>
+      </div> -->
+
+    </div>
+    <div id="points">0</div>
+    
+  </body>
+</html>
